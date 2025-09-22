@@ -2,20 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>K.KOTIEASHWARANAND - Portfolio</title>
+  <title>K. KOTIEASHWARANAND - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // Simple logout simulation
+    function logout() {
+      alert("You have logged out successfully!");
+      window.location.href = "index.html"; // refresh or redirect
+    }
+  </script>
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
       background-color: #f4f4f4;
+      padding: 40px;
       color: #333;
+      text-align: center;
     }
-    h1, h2 {
+    h1, h2, h3 {
       color: #0a66c2;
     }
     img {
       width: 200px;
       border-radius: 10px;
+      margin: 10px;
     }
     a {
       color: #0077cc;
@@ -24,26 +35,66 @@
     a:hover {
       text-decoration: underline;
     }
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
     footer {
       margin-top: 40px;
       border-top: 1px solid #ccc;
       padding-top: 10px;
-      text-align: center;
+    }
+    /* Profile container */
+    .container {
+      width: 300px;
+      margin: 30px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #fff;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: darkred;
     }
   </style>
 </head>
 <body>
 
+  <!-- Profile Container -->
+  <div class="container">
+    <h2>Welcome, <span id="profileUsername">K. KOTIEASHWARANAND</span></h2>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <!-- Portfolio Content -->
   <h1>K. KOTIEASHWARANAND</h1>
-  <h2>BCA (Multimedia and Animation)</h2>
+  <h2>BCA (Multimedia and Animation) Student</h2>
 
   <h3>About Me</h3>
-  <p>I am a passionate multimedia and animation student who enjoys creating digital content, 
-     exploring design tools, and learning modern web technologies like HTML and CSS.</p>
-  <img src="your-photo.jpg" alt="My Photo">
+  <p>I am K. KOTIEASHWARANAND, a student of Multimedia and Animation at Hindustan University.  
+     I am passionate about digital media, design, and building creative projects using HTML, CSS, and multimedia tools.</p>
+  <img src="kotieashwaranand-photo.jpg" alt="K. KOTIEASHWARANAND">
 
   <h3>Education</h3>
-  <table border="1" cellpadding="10">
+  <table>
     <tr>
       <th>Degree</th>
       <th>Institution</th>
@@ -51,7 +102,7 @@
     </tr>
     <tr>
       <td>BCA (Multimedia and Animation)</td>
-      <td>Hindustan University, Institute of Science and Technology</td>
+      <td>Hindustan University Institute of Science and Technology</td>
       <td>Ongoing</td>
     </tr>
     <tr>
@@ -62,18 +113,18 @@
   </table>
 
   <h3>Skills</h3>
-  <ul>
+  <ul style="list-style: none; padding: 0;">
     <li>HTML</li>
     <li>CSS</li>
     <li>Digital Media</li>
   </ul>
 
   <h3>Projects</h3>
-  <h4>1. Personal Portfolio</h4>
-  <p>A personal website to showcase my profile, skills, and projects.</p>
+  <h4>1. Personal Portfolio Website</h4>
+  <p>A responsive website showcasing my skills, education, and projects.</p>
 
-  <h4>2. Digital Media Project</h4>
-  <p>A creative multimedia project designed as part of my coursework.</p>
+  <h4>2. Multimedia Project</h4>
+  <p>A creative project designed using multimedia and animation tools.</p>
 
   <h3>Contact Information</h3>
   <p>Email: <a href="mailto:kotieashwaranand@gmail.com">kotieashwaranand@gmail.com</a></p>
